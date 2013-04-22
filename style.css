@@ -1,0 +1,131 @@
+body, html {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  /* $font-size: 16; */
+  /* $line: 24; */
+  font-size: 1em; /* $font-size / 16 * 1em */
+  line-height: 1.5em /* $line / $font-size em*/
+}
+
+#header { 
+  border: 1px solid blue;
+  overflow: hidden;
+  /*padding: 0 #{($line/2)/$font-size}em;*/ 
+  padding: 0.75em;
+}
+.header-element {
+  float: left;
+}
+.header-actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-actions-action {
+  float: left;
+  margin: 0 20px; 
+
+  padding: 2px 10px;
+  border-radius: 2px;
+  border: 1px solid blue;
+}
+
+#main {
+  height: 90%; 
+  border: 1px solid black;
+  overflow: hidden;
+}
+.main-element {
+  float: left;
+  border: 1px solid grey;
+  height: 100%;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -ms-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+.main-left, .main-right {
+  width: 19.5%;
+  /* TODO leave some margins here for the bars to accommodate or something */
+}
+/* .main-left { */
+/*   margin-left: 0; */
+/*   margin-right: -100%; */
+/* } */
+/* .main-element-bar:nth-child(0) { */
+/*   margin-left: 19.5%; */
+/*   margin-right: -80.5%; */
+/* } */
+.main-element-bar {
+  float: left;
+  width: 0.5%;
+  background-color: grey;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+.main-element-bar:hover {
+  opacity: 1;
+}
+.main-element-upper, .main-element-lower {
+  height: 50%;
+  border: 1px solid black;
+  width: 100%;
+}
+.main-map {
+  width: 60%;
+}
+
+.main-double-left-panel .main-left {
+  width: 40%;
+}
+.main-double-left-panel .main-map {
+  width: 40%;
+}
+.main-zero-left-panel .main-left {
+  width: 0;
+}
+.main-zero-left-panel .main-map {
+  width: 80%;
+}
+
+#footer {
+  border: 1px solid red;
+  /*padding: 0 #{($line/2)/$font-size}em;*/ 
+  padding: 0.75em;
+}
+.footer-element {
+  float: left;
+}
+
+/* @media screen and (min-width: 44em) { */
+/*   .main-map { */
+/*     background-color: red; */
+/*   } */
+/*   .header-actions-action:nth-child(5) { */
+/*     display: none; */
+/*   } */
+/* } */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}

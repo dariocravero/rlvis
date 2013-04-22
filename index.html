@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=no-js> <!--<![endif]-->
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>Visualis Layout</title>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=author content="">
+    <meta name=description content="">
+
+    <link rel=stylesheet href="normalize.css">
+    <link rel=stylesheet href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id=header class=clearfix>
+      <ul class="header-element header-actions clearfix">
+        <li class=header-actions-action>Link 1</li>
+        <li class=header-actions-action>Link 2</li>
+        <li class=header-actions-action>Link 3</li>
+        <li class=header-actions-action>Link 4</li>
+        <li class=header-actions-action>Link 5</li>
+      </ul>
+      <div class="header-element header-user-information">Información del usuario....</div>
+      <div class="header-element header-finish">Finalizar Sesión</div>
+    </header>
+
+    <div id=main class=clearfix>
+      <div class="main-element main-left">
+        <div class=main-element-upper></div>
+        <div class=main-element-lower></div>
+      </div>
+      <div class=main-element-bar></div>
+      <div id=map class="main-element main-map">MAPA</div>
+      <div class=main-element-bar></div>
+      <div class="main-element main-right">
+        <div class=main-element-upper></div>
+        <div class=main-element-lower></div>
+      </div>
+    </div>
+
+    <footer id=footer class=clearfix>
+      <div class="footer-element footer-comments">Comentarios.....</div>
+      <div class="footer-element footer-version">v 2.1.0</div>
+      <div class="footer-element footer-separator">|</div>
+      <div class="footer-element footer-profile">2</div>
+    </footer>
+
+    <script src=panels.js></script>
+  </body>
+</html>
